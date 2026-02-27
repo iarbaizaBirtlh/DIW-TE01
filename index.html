@@ -4,21 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arbaiza | PROFESIONAL PANS</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+        footer {
+            background-color: #2c2521;
+            color: #a3a3a3;
+            padding: 30px 17% 20px 17%;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            /* max-width: 1200px; */
+            margin: 0 auto;
+        }
+
+        /* Footer Contacto */
+        .footer-contact h3 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        .footer-contact p {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .map-box {
+            width: 100%;
+            height: 170px;
+            background: #2a2522; /* Placeholder del mapa */
+            border-radius: 12px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            overflow: hidden;
+            border: 1px solid #3d3531;
+            /* Simulación visual del mapa */
+            background-image: linear-gradient(45deg, #332d2a 25%, transparent 25%), 
+                              linear-gradient(-45deg, #332d2a 25%, transparent 25%);
+            background-size: 20px 20px;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #666;
+        }
+        .legal-links span {
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <!--<img src="images/logo.png" alt="Logo Arbaiza">-->
-                <!--<span style="
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    background-color: #ff3300;
-                    vertical-align: middle;
-                "></span>-->
-                Arbaiza
+                <div class="logo-box">
+                    Arbaiza
+                </div>
             </a>
         </div>
 
@@ -31,8 +85,8 @@
             </ul>
         </nav>
 
-        <div class="icons">
-            <a href="#">ES</a>
+        <div class="nav-icons">
+            <a href="#">ES | EU</a>
             <a href="#">🔍</a>
             <a href="cart.html">🛒</a>
         </div>
@@ -40,15 +94,60 @@
 
     <main>
         <p>Main pendiente</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </main>
 
     <footer>
-        <section class="footer-info">
-            <p>Direccion ejemplo 123</p>
-        </section>
-        <section class="footer-bottom">
-            <p>&copy; 2026 Tienda Online</p>
-        </section>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Arbaiza</h2>
+                <p>Teinda especializada en sartenes y menaje de conina de alta gama. Pasión por la gastronomía desde el corazón de Araba.</p>
+                <div class="social-icons">
+                    <div class="icon-box">i</div>
+                    <div class="icon-box">f</div>
+                    <div class="icon-box">x</div>
+                </div>
+            </div>
+            <div>
+                <h3>Categorías</h3>
+                <ul>
+                    <li>Antiadherentes</li>
+                    <li>Acero Inoxidable</li>
+                    <li>Hierro Fundido</li>
+                    <li>Blog & Recetas</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>📍 Plaza de la Virgen Blanca, 1<br>01001 Vitoria-Gazteiz</p>
+                <p>📞+34 945 000 000</p>
+                <p>✉️ info@arbaiza.eus</p>
+                <div class="map-box">MAPA</div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Arbaiza Pans. Todos los derechos reservados.</span>
+            <div class="legal-links">
+                <span>Aviso legal</span>
+                <span>Privacidad</span>
+                <span>Cookies</span>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
