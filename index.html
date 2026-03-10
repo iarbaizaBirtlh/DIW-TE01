@@ -8,34 +8,46 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 5%;
+            background-color: #ffffff;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <div class="logo-box">
-                    Arbaiza
-                </div>
-            </a>
-        </div>
+    <header class="header-container">
+        <a href="index.html" class="logo-section">
+            <div class="logo-box"></div>
+            <div class="brand-text">
+                <span class="brand-name">Arbaiza</span>
+                <span class="brand-subtitle">PROFESIONAL PANS</span>
+            </div>
+        </a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="store.html">Tienda</a></li>
-                <li><a href="comparison.html">Comparar</a></li>
-                <li><a href="cart.html">Carrito</a></li>
-            </ul>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link active">Inicio</a>
+            <a href="store.html" class="nav-link">Tienda</a>
+            <a href="comparison.html" class="nav-link">Comparar</a>
+            <a href="cart.html" class="nav-link">Carrito</a>
         </nav>
 
-        <div class="nav-icons">
-            <a href="#">ES | EU</a>
-            <a href="#">🔍</a>
-            <a href="cart.html">🛒</a>
+        <div class="nav-actions">
+            <div class="lang-selector">
+                <span class="lang-option selected">ES</span>
+                <span class="lang-option">EU</span>
+            </div>
+
+            <button class="icon-btn">🔍</button>
+
+            <a href="cart.html" class="cart icon-btn">
+                🛒
+                <span class="cart-badge">0</span>
+            </a>
         </div>
     </header>
 
