@@ -16,12 +16,71 @@
             justify-content: space-between;
             padding: 20px 5%;
             background-color: #ffffff;
+            border-bottom: 2px solid #000000;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); */
+        }
+
+        /* Header Brand Logo */
+        .brand-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .logo-box {
+            width: 45px;
+            height: 45px;
+            background-color: #d35e3b;  /* cambiar a naraja OG */
+            border-radius: 10px;
+        }
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .brand-name {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #374151; /* cambiar a negro OG */
+            line-height: 1;
+        }
+        .brand-subtitle {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #d35e3b;  /* cambiar a naraja OG */
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        /* Header Navegacion */
+        .nav-menu {
+            display: flex;
+            gap: 2.5rem;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #6b7280; /* cambiar a gris OG */
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #d35e3b;  /* cambiar a naraja OG */
+        }
+
+        /* Header Actions */
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .lang-selector {
+
         }
     </style>
 </head>
 <body>
     <header class="header-container">
-        <a href="index.html" class="logo-section">
+        <a href="index.html" class="brand-section">
             <div class="logo-box"></div>
             <div class="brand-text">
                 <span class="brand-name">Arbaiza</span>
