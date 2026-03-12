@@ -45,9 +45,73 @@
             font-weight: bold;
             font-size: 1.2rem;
         }
-        .btn-catalogo:hover {
 
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 50px 20%;
         }
+        .categori-card {
+            height: 220px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-end;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+        /* .categori-card:hover {
+            transform: translateY(-5px);
+        } */
+        .cat-anti {
+            background:
+                linear-gradient(to top, 
+                        rgba(0, 0, 0, 0.8) 0%, 
+                        rgba(0, 0, 0, 0.4) 40%, 
+                        rgba(0, 0, 0, 0.1) 80% ), 
+                url('images/antiadherente.png') center/cover;
+        }
+        .cat-inox {
+            background:
+                linear-gradient(to top, 
+                        rgba(0, 0, 0, 0.8) 0%, 
+                        rgba(0, 0, 0, 0.4) 40%, 
+                        rgba(0, 0, 0, 0.1) 80% ), 
+                url('images/inox2.png') center/cover;
+        }
+        .cat-hierro {
+            background:
+                linear-gradient(to top, 
+                        rgba(0, 0, 0, 0.8) 0%, 
+                        rgba(0, 0, 0, 0.4) 40%, 
+                        rgba(0, 0, 0, 0.1) 80% ), 
+                url('images/hierro2.png') center/cover;
+        }
+        .cat-wok {
+            background:
+                linear-gradient(to top, 
+                        rgba(0, 0, 0, 0.8) 0%, 
+                        rgba(0, 0, 0, 0.4) 40%, 
+                        rgba(0, 0, 0, 0.1) 80% ), 
+                url('images/wok.png') center/cover;
+        }
+        .cat-info {
+            color: white;
+            margin: 30px;
+        }
+        .cat-info h3 {
+            font-size: 1.5rem;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .cat-info p {
+            opacity: 0.8;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+
     </style>
 </head>
 <body>
@@ -116,6 +180,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
 
     <footer>
