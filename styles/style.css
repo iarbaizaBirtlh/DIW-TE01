@@ -1,6 +1,59 @@
+/* Reset */
+/* 1. CSS Reset & Global Base */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Crucial para que el padding no afecte al ancho total */
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth; /* Para que la navegación entre secciones sea fluida */
+    font-size: 16px; /* Base para el uso de unidades REM */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased; /* Mejora la legibilidad de la fuente */
+    background-color: #F8F6F6; /* Gris muy claro de fondo que vemos en las capturas */
+    color: #111827; /* Gris oscuro casi negro para el texto principal */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Reseteo de elementos específicos */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%; /* Evita que las imágenes se salgan de sus contenedores */
+}
+
+input, button, textarea, select {
+    font: inherit; /* Hereda la tipografía del body */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none; /* Quita los puntos de las listas (usado en el footer) */
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+
 /*********
 * Header *
 *********/
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #F8F6F6;
+}
 
 .header-container {
 	padding: 18px 17.5%;
@@ -298,7 +351,7 @@
 	width: auto;
 }
 .product-info {
-	height: 215px;
+	height: auto;
 	padding: 25px;
 }
 .product-info h3 {
@@ -500,18 +553,18 @@ footer {
 	color: #ff5722;
 }
 .map-box {
-	width: 100%;
-	height: 170px;
-	background: #2a2522; /* Placeholder del mapa */
-	border-radius: 12px;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	overflow: hidden;
-	border: 1px solid #3d3531;
-	/* Simulación visual del mapa */
-	background-image: linear-gradient(45deg, #332d2a 25%, transparent 25%), 
-						linear-gradient(-45deg, #332d2a 25%, transparent 25%);
-	background-size: 20px 20px;
+    width: 100%;
+    height: 170px;
+    background: #2a2522; 
+    border-radius: 12px;
+    margin-top: 20px;
+    overflow: hidden;
+    border: 1px solid #3d3531;
+    position: relative;
+}
+.map-box iframe {
+    width: 100%;
+    height: 100%;
 }
 
 /* Footer Bottom */
